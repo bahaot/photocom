@@ -126,6 +126,8 @@ const DATA = [
         thumbnail: "https://randomuser.me/api/portraits/thumb/men/43.jpg",
       },
     ],
+
+    savedPost: [],
   },
 ];
 

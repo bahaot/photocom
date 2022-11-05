@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import "./App.css";
+import NavBar from "./component/NavBar/NavBar";
 import { Layout } from "./component/sharedCompoennts/Layout/Layout";
 
 import DATA from "./Data/Data";
@@ -23,7 +24,7 @@ const App = () => {
   // since this is not a real application we are going to work with only one user
   return (
     <Layout>
-      <div>nav</div>
+      <NavBar />
       <div>home</div>
       <div>right</div>
     </Layout>

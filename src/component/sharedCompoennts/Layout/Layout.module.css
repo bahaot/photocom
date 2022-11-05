@@ -1,0 +1,14 @@
+.layout-main {
+    display: grid;
+    grid-template-columns: 10fr 60fr 30fr;
+}
+
+div:nth-child(1) {
+    background-color: orangered;
+}
+div:nth-child(2) {
+    background-color: aqua;
+}
+div:nth-child(3) {
+    background-color: beige;
+}

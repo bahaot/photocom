@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import "./App.css";
 import { Layout } from "./component/sharedCompoennts/Layout/Layout";
-
+import Stories from './component/Stories/Stories'
 import DATA from "./Data/Data";
 
 // the coming data is look like this
@@ -24,7 +24,7 @@ const App = () => {
   return (
     <Layout>
       <div>nav</div>
-      <div>home</div>
+      <div> <Stories stories={users[0].stories} /> </div>
       <div>right</div>
     </Layout>
   );

@@ -1,0 +1,23 @@
+.storyContainer {
+    /* background-color: red; */
+    height: 167px;
+    width: 100%;
+    /* margin: 10%; */
+    display: flex;
+    align-items: flex-start;
+    padding: 30px;
+    justify-content: flex-start;
+    position: relative;
+    border: transparent;
+    border-top-left-radius: 70px;
+    background-color: azure;
+}
+
+.line::after {
+    content: "";
+    width: 89%;
+    left: 0;
+    top: 150px;
+    position: absolute;
+    border-bottom: 1px silver solid;
+}

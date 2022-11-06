@@ -1,0 +1,39 @@
+.cardContainer {
+
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "avenir", sans-serif;
+    font-size: 12px;
+    /* width: 25%; */
+}
+
+.card {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px #7FBCF3 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.card img {
+    border-radius: 50%;
+    height: 97%;
+    width: 97%;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.cardContainer p {
+    color: #202631;
+    padding: 16px
+}

@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import NavBar from "./component/NavBar/NavBar";
 import { Layout } from "./component/sharedCompoennts/Layout/Layout";
-import Stories from './component/Stories/Stories'
+import Stories from "./component/Stories/Stories";
 import DATA from "./Data/Data";
 import RightNavbar from "./component/RightNavbar/RightNavbar";
 import TimeLine from "./component/sharedCompoennts/TimeLine/TimeLine";
@@ -23,16 +23,17 @@ import TimeLine from "./component/sharedCompoennts/TimeLine/TimeLine";
 const App = () => {
   const [users, setUsers] = useState(DATA);
   // since this is not a real application we are going to work with only one user
- 
 
   return (
-
     <Layout>
       <NavBar />
-      <div> <Stories stories={users[0].stories} /> </div>
-      <RightNavbar/>
+      <div>
+        {" "}
+        <Stories stories={users[0].stories} />
+        <TimeLine data={users[0].timeLine.following} />
+      </div>
+      <RightNavbar />
     </Layout>
-
   );
 };
 

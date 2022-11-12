@@ -26,9 +26,13 @@ const App = () => {
  
 
   return (
-    <>
-    <TimeLine data={users[0].timeLine.following}/>
-    </>
+
+    <Layout>
+      <NavBar />
+      <div> <Stories stories={users[0].stories} /> </div>
+      <RightNavbar/>
+    </Layout>
+
   );
 };
 

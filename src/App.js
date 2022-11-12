@@ -25,7 +25,11 @@ const App = () => {
  
 
   return (
-
+    <Layout>
+      <NavBar />
+      <div> <Stories stories={users[0].stories} /> </div>
+      <RightNavbar/>
+    </Layout>
   );
 };
 

@@ -1,0 +1,36 @@
+.TimeLineHeader{
+    display: flex;
+}
+.TimeLineHeader .TimeLineTitle{
+    width: 40%;
+    opacity: 1;
+color: rgba(32,38,49,1);
+font-size: 15px;
+font-weight: 900;
+font-style: normal;
+letter-spacing: 0px;
+text-align: left;
+}
+.TimeLineHeader .TimeLineList{
+    width: 60%;
+}
+.TimeLineList{
+    display: flex;
+    justify-content: end;
+
+}
+.TimeLineList button{
+    width:4.5rem;
+    margin-right: .5rem;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    color: #8F9BB3;
+    background-color: transparent;
+}
+.TimeLineList button:hover{
+    cursor: pointer;
+}
+.TimeLineList button:nth-child(2){
+    color: #2E4B9C;
+}

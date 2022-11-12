@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+}
+.RightNavbar{
+    margin-left: auto;
+    width: 450px;
+    background-color: #e5f2f5;
+    padding: 32px;
+}
+
+.Header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.inputPart{
+    width: 244px;
+    height: 50px;
+    padding: 15px;
+    border: 1px solid rgb(119, 119, 119);
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+i{
+    font-size: 20px;
+    color:rgb(119, 119, 119);
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+input{
+    display: block;
+    width: 80%;
+    height: 100%;
+    border:none;
+    background-color: transparent;
+
+}
+
+.notification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(119, 119, 119);
+    border-radius: 25px;
+}
+
+.share{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #2E4B9C;
+    
+}
+
+.share i{
+    color: white ;
+}
+
+.ToFollow{
+    margin: 40px 0;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title div:first-child{
+    opacity: 1;
+    color: rgba(32,38,49,1);
+    font-size: 16px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.title a{
+    opacity: 1;
+    color: rgba(46,75,156,1);
+    font-size: 14px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    cursor: pointer;
+}   
+
+.ItemFollow{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ItemFollow .userInfo{
+    display: flex;
+}
+
+.ItemFollow img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.ItemFollow .text{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ItemFollow .text p{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+    opacity: 1;
+    color: rgba(32,38,49,1);
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.ItemFollow .text p:last-child{
+    opacity: 1;
+    color: rgba(143,155,179,1);
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.ItemFollow button{
+    display: block;
+    width: 100px;
+    height: 32px;
+    border-radius: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.followTrue{
+    border-color: rgb(119, 119, 119) ;
+}
+
+.followFalse{
+    border:none;
+    background-color: #2E4B9C;
+    color:white;
+}
+
+.itemsContainer{
+    display: grid;
+    grid-template-columns: 170px 170px;
+    grid-template-rows: 130px 130px;
+    gap:32px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.imgSaved:hover{
+    cursor: pointer;
+}
+
+.imgSaved img{
+    width: 170px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+
+
+
+

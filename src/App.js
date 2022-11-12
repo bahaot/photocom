@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import NavBar from "./component/NavBar/NavBar";
 import { Layout } from "./component/sharedCompoennts/Layout/Layout";
 import Stories from './component/Stories/Stories'
 import DATA from "./Data/Data";
@@ -21,6 +22,8 @@ import RightNavbar from "./component/RightNavbar/RightNavbar";
 const App = () => {
   const [users, setUsers] = useState(DATA);
   // since this is not a real application we are going to work with only one user
+ 
+
   return (
 
   );

@@ -1,0 +1,49 @@
+.cardContainer {
+
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "avenir", sans-serif;
+    font-size: 12px;
+    position: relative;
+}
+
+.card {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px #596A88 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card img {
+    border-radius: 50%;
+    height: 97%;
+    width: 97%;
+    cursor: pointer;
+    padding: 2px;
+    opacity: .6;
+
+}
+
+.cardContainer p {
+    color: #202631;
+    padding: 16px
+}
+
+.icon {
+    width: 400px;
+    color: white;
+    z-index: 200;
+    position: absolute;
+    /* top: 100px; */
+    height: 20px;
+    font-weight: 800;
+}

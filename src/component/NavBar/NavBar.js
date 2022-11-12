@@ -30,6 +30,7 @@ const NavBar = () => {
 
     copyOfIcons[index].isActive = true;
     setIcons(copyOfIcons);
+    
   };
 
   return (

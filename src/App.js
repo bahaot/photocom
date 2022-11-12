@@ -22,13 +22,7 @@ import DATA from "./Data/Data";
 const App = () => {
   const [users, setUsers] = useState(DATA);
   // since this is not a real application we are going to work with only one user
-  return (
-    <Layout>
-      <NavBar />
-      <div>home</div>
-      <div>right</div>
-    </Layout>
-  );
+ 
 };
 
 export default App;

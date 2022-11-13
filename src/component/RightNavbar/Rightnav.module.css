@@ -1,11 +1,13 @@
-*{
-    box-sizing: border-box;
+.fixed {
+    width: 100%;
 }
 .RightNavbar{
     margin-left: auto;
-    width: 450px;
     background-color: #e5f2f5;
     padding: 32px;
+    position: fixed;
+    right: 0;
+
 }
 
 .Header{

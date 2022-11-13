@@ -13,21 +13,21 @@ export default function TimeLineContentImg({ TimeLineItem }) {
     } else {
       setNumLike(0);
     }
+  }, [clicklike]);
 
+  useEffect(() => {
     if (clickcomment) {
       setNumComment(numComment + 1);
     } else {
       setClickcomment(0);
     }
-  }, [clickcomment, clicklike])
-
+  }, [clickcomment]);
+  
   function incLike() {
     setClicklike(!clicklike);
-   
   }
   function incComment() {
     setClickcomment(!clickcomment);
-  
   }
   return (
     <>
@@ -48,9 +48,9 @@ export default function TimeLineContentImg({ TimeLineItem }) {
                 <button onClick={incLike}>
                   <i
                     className={`fa-solid fa-heart ${
-                      clicklike ?  "active-like" : "" }
-                    }`
-                  }
+                      clicklike ? "active-like" : ""
+                    }
+                    }`}
                   ></i>
                 </button>
                 {numLike}

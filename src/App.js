@@ -2,11 +2,9 @@ import { useState } from "react";
 import "./App.css";
 import NavBar from "./component/NavBar/NavBar";
 import { Layout } from "./component/sharedCompoennts/Layout/Layout";
-import Stories from "./component/Stories/Stories";
 import DATA from "./Data/Data";
 import RightNavbar from "./component/RightNavbar/RightNavbar";
-import TimeLine from "./component/sharedCompoennts/TimeLine/TimeLine";
-
+import MainPage from "./component/MainPage/MainPage";
 // the coming data is look like this
 /*
 [
@@ -27,11 +25,7 @@ const App = () => {
   return (
     <Layout>
       <NavBar />
-      <div>
-        {" "}
-        <Stories stories={users[0].stories} />
-        <TimeLine data={users[0].timeLine.following} />
-      </div>
+      <MainPage stories={users[0].stories} data={users[0].timeLine.following} />
       <RightNavbar />
     </Layout>
   );

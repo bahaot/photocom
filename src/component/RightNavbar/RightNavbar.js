@@ -6,10 +6,12 @@ import SavedItems from "./SavedItems";
 
 const RightNavbar = (props) => {
   return (
-    <div className={styles.RightNavbar}>
-      <NavHeader />
-      <ToFollow />
-      <SavedItems />
+    <div className={styles.fixed}>
+      <div className={styles.RightNavbar}>
+        <NavHeader />
+        <ToFollow />
+        <SavedItems />
+      </div>
     </div>
   );
 };

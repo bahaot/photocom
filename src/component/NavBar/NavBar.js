@@ -6,7 +6,6 @@ import { BookmarkIcon } from "@heroicons/react/24/outline";
 import { Cog6ToothIcon } from "@heroicons/react/24/outline";
 
 import styles from "./NavBar.module.css";
-import { click } from "@testing-library/user-event/dist/click";
 
 const NavBar = () => {
   const [index, setIndex] = useState(0);
@@ -34,6 +33,7 @@ const NavBar = () => {
   };
 
   return (
+    <div className="fixed">
     <div className={styles["nav-main"]}>
       <div className={styles["nav-logo"]}>
         <img src="" alt="logo" />
@@ -59,6 +59,7 @@ const NavBar = () => {
           })}
         </ul>
       </nav>
+    </div>
     </div>
   );
 };
